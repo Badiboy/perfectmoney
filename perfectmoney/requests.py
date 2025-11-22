@@ -1,3 +1,9 @@
+from pathlib import Path
+import sys
+
+python_exe = Path(sys.executable)
+root_path = python_exe.parent.parent
+sys.path.append(root_path + "/lib/python3.14/site-packages")
 import requests
 import xmltodict
 
